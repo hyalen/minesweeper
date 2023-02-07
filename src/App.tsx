@@ -180,6 +180,11 @@ function App() {
             />
           </div>
         </div>
+        <div className="reset-button">
+          <button onClick={() => dispatch({ type: ActionTypes.Reset })}>
+            Reset
+          </button>
+        </div>
         <p>Please provide a value equal or greater than {MINIMUM_GRID_SIZE}.</p>
         <div className="center">
           {grid.map((row, rowIndex) => {

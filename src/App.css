@@ -85,3 +85,7 @@
 .gameStatus > p {
   margin: 0;
 }
+
+.reset-button {
+  margin-top: 1rem;
+}

@@ -24,7 +24,7 @@ export const getMines = (rows: number, columns: number) => {
 };
 
 /**
- * created the UI grid attaching '#' as a non-visited cell
+ * creates the UI grid attaching '#' as a non-visited cell
  * For a 3x3 grid for example, we'd have the following pattern:
   # # #
   # # #
@@ -52,7 +52,6 @@ export const setDefaultValues = (): State => {
   const rows = 6;
   const columns = 6;
 
-  // initializing the grids with empty values
   const grid = resetGrid(rows, columns);
 
   return {
@@ -66,7 +65,7 @@ export const setDefaultValues = (): State => {
 
 export const MINIMUM_GRID_SIZE = 6;
 
-/** we need to keep track of the input that's being passed. It shouldn't accept
+/** we need to keep track of the grid sizes that's being set. It shouldn't accept
  *  empty or values out of bounds
  */
 export const isGridSizeValid = (rows: number, columns: number) =>
