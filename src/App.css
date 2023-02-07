@@ -1,0 +1,87 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.control {
+  display: flex;
+  gap: 1rem;
+}
+
+.control > div > input {
+  display: block;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.cell {
+  background: #c0c0c0;
+  display: block;
+  cursor: pointer;
+  border: solid #808080;
+  border-width: 0 1px 1px 0;
+  font-size: 1rem;
+  position: relative;
+  padding-top: 5px;
+  line-height: 1;
+  height: 2rem;
+  width: 2rem;
+}
+
+.cell::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px outset #ececec;
+  height: 2rem;
+  width: 2rem;
+}
+
+.center {
+  margin: 2rem auto 0;
+}
+
+.visited::after {
+  content: "";
+  position: absolute;
+  border: none;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.game-status {
+  height: 48px;
+  margin-top: 2rem;
+}
+
+.gameStatus > p {
+  margin: 0;
+}
